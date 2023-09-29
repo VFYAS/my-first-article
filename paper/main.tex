@@ -16,22 +16,14 @@
 
 
 
-\title{A template for the \emph{arxiv} style}
+\title{Использование пространственно-временных зависимостей для мониторинга аддитивного производства с применением глубокого обучения}
 
-\author{ David S.~Hippocampus\thanks{Use footnote for providing further
-		information about author (webpage, alternative
-		address)---\emph{not} for acknowledging funding agencies.} \\
-	Department of Computer Science\\
-	Cranberry-Lemon University\\
-	Pittsburgh, PA 15213 \\
-	\texttt{hippo@cs.cranberry-lemon.edu} \\
+\author{Vladislav Soldatov\\
+	\texttt{worklikewalkietalkie@gmail.com} \\
 	%% examples of more authors
 	\And
-	Elias D.~Striatum \\
-	Department of Electrical Engineering\\
-	Mount-Sheikh University\\
-	Santa Narimana, Levand \\
-	\texttt{stariate@ee.mount-sheikh.edu} \\
+	  Dmitry Kropotov \\
+	\texttt{dmitry.kropotov@gmail.com} \\
 	%% \AND
 	%% Coauthor \\
 	%% Affiliation \\
@@ -56,25 +48,28 @@
 %%% Once the PDF is generated, you can check the metadata with
 %%% $ pdfinfo template.pdf
 \hypersetup{
-pdftitle={A template for the arxiv style},
+pdftitle={Использование пространственно-временных зависимостей для мониторинга аддитивного производства с применением глубокого обучения},
 pdfsubject={q-bio.NC, q-bio.QM},
-pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
-pdfkeywords={First keyword, Second keyword, More},
+pdfauthor={Vladislav Soldatov, Dmitry Kropotov},
+pdfkeywords={Additive manufacturing, Laser Powder Bed Fusion, Online
+monitoring, Flaw detection, Porosity prediction, Spatial-temporal Modeling},
 }
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-	\lipsum[1]
+	Мониторинг процессов аддитивного производства в режиме реального времени необходим для обеспечения качества деталей и предотвращения дефектов, так как лазерное сплавление в порошковом слое -- это динамический и сложный процесс. Однако существующие алгоритмы мониторинга в режиме реального времени часто зависят от конкретного случая и не устойчивы к изменениям параметров процесса или типов данных. В данной работе рассмотрен один из методов глубокого обучения, ранее использованных для решения этой проблемы, а также предложен новый подход к задаче. Кроме того, было проведено исследование вышеупомянутых алгоритмов и их сравнение на наборе данных NIST <<Overhang Part X4>>. 
 \end{abstract}
 
 
-\keywords{First keyword \and Second keyword \and More}
+\keywords{Additive manufacturing, Laser Powder Bed Fusion, Online
+monitoring, Flaw detection, Porosity prediction, Spatial-temporal Modeling}
 
-\section{Introduction}
-\lipsum[2]
-\lipsum[3]
+\section{Введение}
+    Аддитивное производство (АП) - это быстро развивающаяся технология, которая потенциально способна произвести революцию в обрабатывающей промышленности~\cite{AMisCool}. Технология АП позволяет создавать сложные, легкие и высокопроизводительные детали, которые было бы трудно или невозможно изготовить традиционными методами. Однако процессы АП сложны и могут быть подвержены дефектам. Использование аддитивного производства в промышленности в настоящее время ограничено из-за неизвестного заранее и ненадежного качества деталей~\cite{Grasso2017ProcessDA}. Это в значительной степени вызвано сложными взаимосвязями между параметрами процесса, такими как мощность лазера, скорость лазерного излучения и другими настройками машины. Поэтому важно разработать методы мониторинга процессов АП в режиме реального времени для обеспечения качества деталей.
+
+    Несмотря на возможность использования статистических~\cite{gaussian_process} методов и классических алгоритмов машинного обучения~\cite{classic_ml}, одним из многообещающих подходов к мониторингу процессов АП в режиме реального времени является использование глубокого обучения (DL). В данной работе представлен новый подход к использованию DL для мониторинга процессов АП в режиме реального времени и проведено сравнение с одним из лучших алгоритмов для данной задачи на настоящий момент, ConvLSTMAE~\cite{convlstm_nist}. Как предлагаемый, так и существующий подходы используют пространственно-временную модель для изучения взаимосвязей между параметрами процесса и качеством детали. Пространственно-временная модель учитывает динамическую природу процессов АП. Это позволяет рассматриваемым подходам быть более точными, чем традиционные методы, которые учитывают только статические зависимости между параметрами процесса и качеством детали.
 
 \section{Headings: first level}
 \label{sec:headings}
